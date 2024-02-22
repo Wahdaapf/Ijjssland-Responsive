@@ -1,5 +1,6 @@
 import React from "react";
 import Main from "../../layout";
+import inputImage from "../../assets/base/input.png";
 
 const Login = () => {
     return (
@@ -11,7 +12,10 @@ const Login = () => {
                 <div>
                     <div className="flex">
                         <p className="text-white">Naam</p>
-                        <input className="bg-none" type="text" />
+                        <img src={inputImage} alt="Gambar" className="absolute inset-0 w-40 h-auto object-cover" />
+                        <div className="relative">
+                            <input className="bg-none absolute inset-0 w-full h-full" type="text" />
+                        </div>
                     </div>
                     <div className="flex">
                         <p className="text-white">Naam</p>
