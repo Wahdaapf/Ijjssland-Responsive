@@ -1,0 +1,21 @@
+html {
+    height: -webkit-fill-available;
+}
+
+body,
+#root,
+main,
+canvas {
+    height: -webkit-fill-available;
+}
+
+#root {
+    background: linear-gradient(to bottom, #0081ad, #00384a);
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: local("Proxima Nova"), url("assets/fonts/proxima-nova/Fontspring-DEMO-proximanova-regular.otf") format("truetype"); /* Ganti dengan path yang sesuai dengan struktur proyek Anda */
+    font-weight: normal;
+    font-style: normal;
+}
