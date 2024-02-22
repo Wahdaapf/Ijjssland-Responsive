@@ -19,3 +19,9 @@ canvas {
     font-weight: normal;
     font-style: normal;
 }
+
+input[type="text"] {
+    border: none;
+    background: none;
+    /* tambahkan properti lain sesuai kebutuhan */
+}
