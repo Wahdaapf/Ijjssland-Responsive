@@ -1,5 +1,5 @@
 html {
-    height: -webkit-fill-available;
+    height: 100vh;
 }
 
 body,
@@ -7,7 +7,7 @@ body,
 #bungkus,
 main,
 canvas {
-    height: -webkit-fill-available;
+    height: 100vh;
 }
 
 #root {
@@ -37,8 +37,8 @@ input[type="text"] {
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
-  }
-  
+}
+
 ::-webkit-scrollbar {
     display: none;
-  }
+}
