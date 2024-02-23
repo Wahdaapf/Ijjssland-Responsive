@@ -1,13 +1,23 @@
-html {
-    height: -webkit-fill-available;
-}
+@import "normalize.css";
 
+html,
 body,
 #root,
 #bungkus,
 main,
 canvas {
     height: -webkit-fill-available;
+}
+
+@media (display-mode: fullscreen) {
+    html
+    body,
+    #root,
+    #bungkus,
+    main,
+    canvas {
+        height: 100vh;
+    }
 }
 
 #root {
@@ -27,6 +37,12 @@ canvas {
     font-weight: 100; /* or use 'thin' */
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .tabb {
+        letter-spacing: 8px;
+    }
+}
+
 input[type="text"] {
     border: none;
     background: none;
@@ -37,8 +53,8 @@ input[type="text"] {
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
-  }
-  
+}
+
 ::-webkit-scrollbar {
     display: none;
-  }
+}

@@ -18,7 +18,7 @@ const Start = () => {
                     <br /> Bekijk de volgende video voor een korte uitleg over hoe je je scherm opneemt. <br />
                     <br /> Bedankt voor je deelname aan de test en veel plezier!
                 </p>
-                <button className="flex relative items-center justify-center h-auto w-[60%] md:w-[30%] p-3 text-center mt-12 bg-no-repeat">
+                <button className="flex relative items-center justify-center h-auto w-[60%] md:w-[40%] lg:w-[30%] p-3 text-center mt-12 bg-no-repeat">
                     <p className="text-white text-center text-xl">Verder</p>
                     <div className="absolute w-full h-full">
                         <img src={buttonBg} alt="" className="w-full h-full" />
