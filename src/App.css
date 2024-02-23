@@ -4,6 +4,7 @@ html {
 
 body,
 #root,
+#bungkus,
 main,
 canvas {
     height: -webkit-fill-available;
@@ -15,13 +16,29 @@ canvas {
 
 @font-face {
     font-family: "Proxima Nova";
-    src: local("Proxima Nova"), url("assets/fonts/proxima-nova/Fontspring-DEMO-proximanova-regular.otf") format("truetype"); /* Ganti dengan path yang sesuai dengan struktur proyek Anda */
-    font-weight: normal;
+    src: local("Proxima Nova"), url("assets/fonts/proxima-nova/Fontspring-DEMO-proximanova-regular.otf") format("truetype");
     font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: local("Proxima Nova Thin"), url("assets/fonts/proxima-nova/Fontspring-DEMO-proximanova-thin.otf") format("truetype");
+    font-style: normal;
+    font-weight: 100; /* or use 'thin' */
 }
 
 input[type="text"] {
     border: none;
     background: none;
+    outline: none;
     /* tambahkan properti lain sesuai kebutuhan */
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+::-webkit-scrollbar {
+    display: none;
+  }

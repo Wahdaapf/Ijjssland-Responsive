@@ -1,30 +1,49 @@
 import React from "react";
-import Main from "../../layout";
+import Main from "../../layout/index.jsx";
 import inputImage from "../../assets/base/input.png";
+import buttonBg from "../../assets/base/button.png";
 
 const Login = () => {
     return (
-        <Main>
-            <div className="flex flex-col justify-center items-center">
-                <h1 className="text-white">WELKOM BIJ</h1>
-                <h1 className="text-white">DE GEVAARLIJKE STOFFEN GAME</h1>
-                <p className="text-white">Aan het einde van deze game, ben jij een nieuwe expert op het gebied van gevaarlijke stoffen. Om te starten, vul je naam en afdeling in.</p>
+        <div className="z-20 w-full h-full flex justify-center py-10">
+            <div className="m-auto h-full overflow-auto w-[80vw] md:w-[70vw] lg:w-[70vw] flex flex-col items-center justify-start text-white p-4 pt-4 md:pt-10 lg:pt-10">
+                <p style={{ fontFamily: "Proxima Nova" }} className="text-4xl lg:text-4xl xl:text-xl text-center mt-10 md:pt-10 md:p-0 md:pb-4 lg:pb-0 pb-0 font-thin">
+                    WELKOM BIJ
+                </p>
+                <h1 style={{ fontFamily: "Proxima Nova" }} className="text-4xl md:text-5xl xl:text-3xl font-bold text-center p-2 md:p-0 mb-4">
+                    DE GEVAARLIJKE STOFFEN GAME
+                </h1>
+                <p style={{ fontFamily: "Proxima Nova" }} className="text-center font-thin text-xl md:text-2xl lg:text-xl">
+                    Aan het einde van deze game, ben jij een nieuwe expert op het gebied van gevaarlijke stoffen. Om te starten, vul je naam en afdeling in.
+                </p>
                 <div>
-                    <div className="flex">
-                        <p className="text-white">Naam</p>
-                        <img src={inputImage} alt="Gambar" className="absolute inset-0 w-40 h-auto object-cover" />
-                        <div className="relative">
-                            <input className="bg-none absolute inset-0 w-full h-full" type="text" />
+                    <div className="flex justify-end mt-4">
+                        <p style={{ fontFamily: "Proxima Nova" }} className="text-white mr-2 text-xl md:text-2xl lg:text-xl">
+                            Naam
+                        </p>
+                        <div className="relative h-[6vh] md:h-[6vh] lg:h-[35px]">
+                            <img src={inputImage} alt="Gambar" className="w-48 md:w-80 h-full " />
+                            <input type="text" className="absolute inset-1 w-44 md:w-76 h-auto text-white" />
                         </div>
                     </div>
-                    <div className="flex">
-                        <p className="text-white">Naam</p>
-                        <input type="text" />
+                    <div className="flex justify-end mt-4">
+                        <p style={{ fontFamily: "Proxima Nova" }} className="text-white mr-2 text-xl md:text-2xl lg:text-xl">
+                            Afdeling
+                        </p>
+                        <div className="relative h-[6vh] md:h-[6vh] lg:h-[35px]">
+                            <img src={inputImage} alt="Gambar" className="w-48 md:w-80 h-full " />
+                            <input type="text" className="absolute inset-1 w-44 md:w-76 h-auto text-white" />
+                        </div>
                     </div>
                 </div>
-                <button className="text-white">Login</button>
+                <button className="flex relative items-center justify-center h-auto w-[60%] md:w-[30%] p-3 text-center mt-12 bg-no-repeat">
+                    <p className="text-white text-center text-xl">Login</p>
+                    <div className="absolute w-full h-full">
+                        <img src={buttonBg} alt="" className="w-full h-full" />
+                    </div>
+                </button>
             </div>
-        </Main>
+        </div>
     );
 };
 

@@ -5,12 +5,14 @@ export default {
         extend: {
             backgroundImage: {
                 bintang: "url('/base.png')",
+                border_desktop: "url('/border_desktop.png')",
+                button: "url('/src/assets/base/button.png')",
             },
         },
         colors: {
             primary: "#0081AD",
             secondary: "#00384A",
-            white: "#FFFFFF"
+            white: "#FFFFFF",
         },
     },
     plugins: [],
