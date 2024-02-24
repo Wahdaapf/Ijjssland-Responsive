@@ -50,15 +50,13 @@ const Main = ({ children }) => {
 
         if (/Android/.test(userAgent)) {
             fullScreenFunction();
-        } else if (/iPhone/.test(userAgent)) {
-            setIsOpen(true);
         } else {
             fullScreenFunction();
         }
     };
 
     return (
-        <div id="bungkus" className="relative w-full h-screen bg-bintang flex flex-col items-center justify-center py-8 px-5">
+        <div id="bungkus" className="relative w-full h-[100dvh] bg-bintang flex flex-col items-center justify-center py-8 px-5">
             <div className="absolute w-full flex top-2 right-2 items-center justify-end">
                 <button className="w-5 sm:w-10 h-5 sm:h-10 me-5" onClick={handleFullscreen}>
                     <img src={FullIcon} alt="" className="w-auto h-auto" />

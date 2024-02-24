@@ -6,16 +6,17 @@ body,
 #bungkus,
 main,
 canvas {
-    height: -webkit-fill-available;
+    height: 100dvh;
 }
 
 @media (display-mode: fullscreen) {
-    html body,
+    html,
+    body,
     #root,
     #bungkus,
     main,
     canvas {
-        height: 100vh;
+        height: 100dvh;
     }
 }
 
