@@ -56,25 +56,27 @@ const Main = ({ children }) => {
     };
 
     return (
-        <div id="bungkus" className="relative w-full h-[100dvh] bg-bintang flex flex-col items-center justify-center py-8 px-5">
-            <div className="absolute w-full flex top-2 right-2 items-center justify-end">
-                <button className="w-5 sm:w-10 h-5 sm:h-10 me-5" onClick={handleFullscreen}>
-                    <img src={FullIcon} alt="" className="w-auto h-auto" />
-                </button>
-                <button className="w-5 sm:w-10 h-5 sm:h-10 me-2">
-                    <img src={EditIcon} alt="" className="w-auto h-auto" />
-                </button>
-            </div>
-            <div className="relative mt-5 w-full h-full flex flex-col items-center">
-                <div className="absolute w-[200px] md:w-[355px] top-[-20px] md:top-[-10px] select-none z-30">
-                    <img src={header} alt="" className="w-full select-none" />
+        <div id="root1">
+            <div id="bungkus" className="relative w-full h-[100dvh] bg-bintang flex flex-col items-center justify-center py-8 px-5">
+                <div className="absolute w-full flex top-2 right-2 items-center justify-end">
+                    <button className="w-5 sm:w-10 h-5 sm:h-10 me-5" onClick={handleFullscreen}>
+                        <img src={FullIcon} alt="" className="w-auto h-auto" />
+                    </button>
+                    <button className="w-5 sm:w-10 h-5 sm:h-10 me-2">
+                        <img src={EditIcon} alt="" className="w-auto h-auto" />
+                    </button>
                 </div>
-                <div className="absolute w-full h-full top-0 left-0 select-none z-10">
-                    <img src={bgImage} alt="" className="w-full h-full select-none" />
-                </div>
-                <div className="w-full h-full overflow-hidden absolute left-0 top-0 z-20">
-                    {children}
-                    <Outlet />
+                <div className="relative mt-5 w-full h-full flex flex-col items-center">
+                    <div className="absolute w-[200px] md:w-[355px] top-[-20px] md:top-[-10px] select-none z-30">
+                        <img src={header} alt="" className="w-full select-none" />
+                    </div>
+                    <div className="absolute w-full h-full top-0 left-0 select-none z-10">
+                        <img src={bgImage} alt="" className="w-full h-full select-none" />
+                    </div>
+                    <div className="w-full h-full overflow-hidden absolute left-0 top-0 z-20">
+                        {children}
+                        <Outlet />
+                    </div>
                 </div>
             </div>
         </div>

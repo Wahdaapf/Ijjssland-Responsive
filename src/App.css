@@ -20,8 +20,12 @@ canvas {
     }
 }
 
-#root {
+#root1 {
     background: linear-gradient(to bottom, #0081ad, #00384a);
+}
+
+#root2 {
+    background: linear-gradient(to bottom, #0081ad, #000000);
 }
 
 @font-face {
@@ -50,11 +54,23 @@ input[type="text"] {
     /* tambahkan properti lain sesuai kebutuhan */
 }
 
-::-webkit-scrollbar {
+#cbar::-webkit-scrollbar {
+    width: 15px !important;
+    background-color: #fff;
+    height: 15px !important;
+}
+#cbar::-webkit-scrollbar-thumb {
+    background-color: #0081ad !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: #045a9b #fff !important;
+    border: 2px solid #fff;
+}
+
+.no-scroll::-webkit-scrollbar {
     width: 5px;
     height: 5px;
 }
 
-::-webkit-scrollbar {
+.no-scroll::-webkit-scrollbar {
     display: none;
 }

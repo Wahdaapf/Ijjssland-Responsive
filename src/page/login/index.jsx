@@ -2,11 +2,12 @@ import React from "react";
 import Main from "../../layout/index.jsx";
 import inputImage from "../../assets/base/input.png";
 import buttonBg from "../../assets/base/button.png";
+import { Link } from "react-router-dom";
 
 const Login = () => {
     return (
         <div className="z-20 w-full h-full flex justify-center py-10">
-            <div className="m-auto h-full overflow-auto w-[80vw] md:w-[70vw] lg:w-[70vw] flex flex-col items-center justify-start text-white p-4 pt-4 md:pt-10 lg:pt-10">
+            <div className="no-scroll m-auto h-full overflow-auto w-[80vw] md:w-[70vw] lg:w-[70vw] flex flex-col items-center justify-start text-white p-4 pt-4 md:pt-10 lg:pt-10">
                 <p style={{ fontFamily: "Proxima Nova" }} className="text-4xl lg:text-4xl xl:text-xl 2xl:text-3xl text-center md:pt-10 2xl:pt-20 md:p-0 md:pb-4 lg:pb-0 pb-0 font-thin">
                     WELKOM BIJ
                 </p>
@@ -36,12 +37,12 @@ const Login = () => {
                         </div>
                     </div>
                 </div>
-                <button className="flex relative items-center justify-center h-auto w-[60%] md:w-[40%] lg:w-[30%] p-3 text-center mt-12 bg-no-repeat">
-                    <p className="text-white text-center text-xl 2xl:text-2xl">Login</p>
+                <Link to="/game/gallery" className="flex relative items-center justify-center h-auto w-[60%] md:w-[40%] lg:w-[30%] p-3 text-center mt-12 bg-no-repeat">
+                    <p className="text-white text-center text-xl">Login</p>
                     <div className="absolute w-full h-full">
                         <img src={buttonBg} alt="" className="w-full h-full" />
                     </div>
-                </button>
+                </Link>
             </div>
         </div>
     );
